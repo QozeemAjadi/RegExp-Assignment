@@ -1,15 +1,15 @@
 // Exercise 1
 //1.1  car and cat
 
-let texts = "I put my car in a car"
+let texts = "My car color is the color of the cat"
 let regExp = /car | cat/  ///ca[rt]/ this is a shorter way of writing the pattern
-let result2 = regExp.test("bar cat")
+let result2 = regExp.test("car cat")
 console.log(result2)
 
 console.log("##################1")
 
 // 1.2 pop and prop
-let words = "There are two words, Pop and Prop"
+let words = "These are two separate words, Pop and Prop"
 let output = /pr?op/i // /pop prop/i
 output = output.test(words)
 console.log(output)
@@ -24,7 +24,7 @@ console.log(regEx.test(exp2))
 console.log("##################3")
 
 // 1.4 Any word ending in ious
-let exp3 = "Jane loves her room because it's spacious but precious seldom visit her"
+let exp3 = "Akin love his sister because she is always gracious and victorious"
 let regExp3 = /\w+ious\b/
 // regExp3 = regExp3.test
 console.log(regExp3.test(exp3))
@@ -32,12 +32,12 @@ console.log(regExp3.test(exp3))
 
 console.log("##################4") 
 
-let myArr =[" This is book.",
-            "This book,",
-            "I love it because",
-            "It has alot of beneficial content in it  ",
-            "I would buy it;",
-            "if I am an engineer:"
+let myArr =[" This is a pencil .",
+            "This pencil,",
+            "I like it because",
+            "I can write alot of content with it  ",
+            "I will get it;",
+            "if I see a bookshop:"
           ]
  
 let regExp4 = /\s[.,;:]/ig
@@ -49,7 +49,7 @@ console.log("##################5")
 // 1.6 A word longer than six letters
 let longLetters = "people, Olalekan, Variable, beneficial, judiciary Olalekan Olalekan"
 let regExp5 = /\b\w{7,}\b/
-// let results = longLetters.replace("Olalekan", "valuable")
+// let results = longLetters.replace("Olalekan", "variable")
 console.log(regExp5.test(longLetters))
 // console.log(results)
 
@@ -66,9 +66,10 @@ console.log("##################7")
 // replacing all the dialogue quotes with double quotes,
 // while keeping the single quotes used in contractions like aren’t.
 
-let story = `Jane stared at the unopened materials on her desk, overwhelmed by its bulkiness. 'I can't finish it,' she sighed. 
-JUde glanced over and smirked, teasingly asking, 'Aren't you coming to our group reading meeting tonight?' 
-Her determination ignited, and she picked up the book, ready to conquer its pages before the gathering.`
+let story =  `Akin gazed at the delicious food of on the table, feeling discourage 
+            by its sheer volume. He coughout and thought, "I don't think I can finish this."
+          Ade looked at him and asked, "can you join us for a play tonight?"
+          Akin answered, and he walked towards them.
 let regularExp = /'([^']+)'/igm;
 let alteredStory = story.replace(regularExp, '"$1"')
 console.log(alteredStory)
@@ -79,13 +80,13 @@ console.log("##################8")
 // Exercise 3
 // Write an expression that matches only JavaScript-style numbers.
 const checkNumbers= [
-  "891",
-  "-75",
-  "+0.8",
-  "7.",
-  ".9",
-  "2.51e-4",
-  "7E10",
+  "761",
+  "-47",
+  "+5.9",
+  "2.",
+  ".3",
+  "4.51a-8",
+  "4B60",
   ".",
 ];
 
